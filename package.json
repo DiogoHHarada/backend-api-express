@@ -1,4 +1,29 @@
 {
+  "name": "backend-api-express",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "api",
+    "express",
+    "prisma",
+    "zod"
+  ],
+  "homepage": "https://github.com/DiogoHHarada/backend-api-express#readme",
+  "bugs": {
+    "url": "https://github.com/DiogoHHarada/backend-api-express/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiogoHHarada/backend-api-express.git"
+  },
+  "license": "ISC",
+  "author": "Diogo Harada",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
   "dependencies": {
     "express": "^5.2.1"
   }

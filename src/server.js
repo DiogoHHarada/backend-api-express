@@ -4,10 +4,30 @@ import express from 'express'
 const app = express()
 const port = 3000
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+app.get('/', (req, res) => { 
+    res.send("Olá seja Bem Vindo")
+})
+
+app.get('/user', (req, res) => { 
+    res.send("Exemplo de GET na rota /user")
+})
+
+app.post('/user', (req, res) => { 
+    res.send("Exemplo de POS na rota /user")
+})
+
+app.put('/user', (req, res) => { 
+    res.send("Exemplo de PUT na rota /user")
+})
+
+app.patch('/user', (req, res) => { 
+    res.send("Exemplo de PATCH na rota /user")
+})
+
+app.delete('/user', (req, res) => { 
+    res.send("Exemplo de DELETE na rota /user")
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on port http://localhost:${port}`)
 })
