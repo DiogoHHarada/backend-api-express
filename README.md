@@ -12,3 +12,27 @@
 - O que é um padrão de projeto?
 - O que é o padrão de projeto MVC?
 - Qual a responsabilidade de cada camada?
+- O que é um ORM?
+- Quais as vantagens de utilizar um ORM?
+
+
+### comandos prisma
+
+Instalação
+- npm i prisma -D
+- npm i dotenv -D
+
+Para Mysql e Mariadb
+- npm install @prisma/client @prisma/adapter-mariadb mariadb
+
+Inicia o Prisma
+npx prisma init --datasource-provider mysql --output ../generated/prisma
+
+Gera as tabelas a partir do schema do prisma
+- npx prisma db push
+
+Gera o schema do prisma a partir do banco de dados
+- npx prisma db pull
+
+
+- npx prisma generate
