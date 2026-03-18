@@ -5,3 +5,7 @@ export const createPublication = async (publication) => {
         data: publication
     })
 }
+
+export const getPublications = async () => {
+    return await prisma.publication.findMany()
+}
