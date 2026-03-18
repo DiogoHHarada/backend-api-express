@@ -10,7 +10,15 @@ datasource db {
 model user {
   id     Int    @id @default(autoincrement())
   avatar String @db.VarChar(500)
-  mome   String @db.VarChar(255)
   email  String @unique
   pass   String @db.VarChar(300)
+  name   String @db.VarChar(255)
+}
+
+model publication {
+  id          Int      @id @default(autoincrement())
+  title       String   @db.VarChar(255)
+  description String   @db.VarChar(500)
+  content     String   @db.Text
+  image       String   @db.VarChar(500)
 }

@@ -20,7 +20,9 @@
 
 Instalação
 - npm i prisma -D
-- npm i dotenv -D para Mysql e Mariadb npm install @prisma/client @prisma/adapter-mariadb mariadb
+- npm i dotenv -D 
+para Mysql e Mariadb 
+npm install @prisma/client @prisma/adapter-mariadb mariadb
 
 Inicia o Prisma
 npx prisma init --datasource-provider mysql --output ../generated/prisma

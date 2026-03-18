@@ -1,4 +1,4 @@
-import { Prisma } from "../helpers/dbConnection.js";
+import { prisma } from "../helpers/dbConnection.js";
 
 export const createUser = async (user) => {
     return await prisma.user.create({
