@@ -15,6 +15,6 @@ router.put('/', updatePubliController)
 
 router.patch('/', avatarUpdatePubliController)
 
-router.delete('/', deletePubliController)
+router.delete('/:id', deletePubliController)
 
 export default router

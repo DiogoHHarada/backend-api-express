@@ -11,10 +11,10 @@ router.get('/', getUsersController)
 
 router.post('/', createUserController)
 
-router.put('/', updateUserController)
+router.put('/:id', updateUserController)
 
-router.patch('/', updateAvatarUserController)
+router.patch('/:id', updateAvatarUserController)
 
-router.delete('/', deleteUserController)
+router.delete('/:id', deleteUserController)
 
 export default router
