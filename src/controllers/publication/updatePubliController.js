@@ -1,13 +1,13 @@
-import {updatePublication} from "../../models/publicationModel.js";
+import { updatePublication } from "../../models/publicationModel.js";
 
-export const updatePublicationController = async (req, res) => {
-    const { id } = req.params
-    const publication = req.body    
+export async function updatePubliController(req, res){
+        const {id} = req.params
+        const publication = req.body
 
-    const result = await updatePublication(publication, +id)
+        const result = await updatePublication(publication, +id)
 
-    return res.status(200).json({
-        message: 'Publication updated successfully',
-        publication: result
-    })
+        return res.json({
+            message: "Publicação atualizada com sucesso!",
+            publication: result
+        })
 }

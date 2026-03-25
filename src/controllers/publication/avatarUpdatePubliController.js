@@ -1,6 +1,6 @@
-import {updatePublication} from "../../models/publicationModel.js";
+import { updatePublication } from "../../models/publicationModel.js";
 
-export async function updateAvatarPublicationController(req, res){
+export async function avatarUpdatePubliController(req, res){
         const {id} = req.params
         const publication = req.body
 

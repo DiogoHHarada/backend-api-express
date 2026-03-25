@@ -1,6 +1,6 @@
 import { updateUser } from "../../models/userModel.js";
 
-export async function updateAvatarUsersController(req, res){
+export async function updateAvatarUserController(req, res){
         const {id} = req.params
         const user = req.body
     
