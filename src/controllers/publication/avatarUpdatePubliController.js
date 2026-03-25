@@ -1,3 +1,13 @@
-export function avatarUpdatePubliController(req, res){
-    res.send("Exemplo de PATCH na rota /post no Router respondida pelo controller")
+import {updatePublication} from "../../models/publicationModel.js";
+
+export async function updateAvatarPublicationController(req, res){
+        const {id} = req.params
+        const publication = req.body
+
+        const result = await updatePublication(publication, +id)
+
+        return res.json({
+            message: "Avatar atualizado com sucesso!",
+            publication: result
+        })
 }

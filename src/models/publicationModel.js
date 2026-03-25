@@ -1,3 +1,4 @@
+import { Extensions } from "@prisma/client/runtime/client";
 import { prisma } from "../helpers/dbConnection.js";
 
 export const createPublication = async (publication) => {
@@ -13,6 +14,15 @@ export const getPublications = async () => {
 export const deletePublication = async (id) => {
     return await prisma.publication.delete({
         where: { 
+            id
+        }
+    })
+}
+
+export const updatePublication = async (publication, id) => {
+    return await prisma.publication.update({
+        data: publication,
+        where: {
             id
         }
     })

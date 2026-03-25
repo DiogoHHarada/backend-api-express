@@ -11,9 +11,9 @@ router.get('/', getPubliController)
 
 router.post('/', createPubliController)
 
-router.put('/', updatePubliController)
+router.put('/:id', updatePubliController)
 
-router.patch('/', avatarUpdatePubliController)
+router.patch('/:id', avatarUpdatePubliController)
 
 router.delete('/:id', deletePubliController)
 
